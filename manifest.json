@@ -1,0 +1,38 @@
+{
+  "manifest_version": "0.3",
+  "name": "ugchooks",
+  "display_name": "UGCHooks",
+  "version": "1.0.0",
+  "description": "MCP connector for UGCHooks: create TikTok and Reels post batches from product links and read hooks, captions and hashtags.",
+  "long_description": "Paste a product link, get 100 TikToks and Reels: slideshows, reaction hook videos and GIF memes with captions. get_profile reads your email and credits. list_batches and get_batch read your post batches with hooks, slide text, captions, hashtags and saved render links. create_batch turns a product link into a brief and the first 10 posts; write_part writes parts of batches you unlocked. No credit spending, unlocking or posting.",
+  "author": {
+    "name": "Codex"
+  },
+  "homepage": "https://ugchooks.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saeedmsdi-ugchooks/mcp-server"
+  },
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ]
+    }
+  },
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=22"
+    }
+  },
+  "license": "MIT"
+}

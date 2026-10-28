@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.saeedmsdi-ugchooks/mcp-server",
+  "description": "MCP connector for UGCHooks: create TikTok and Reels post batches from product links and read hooks, captions and hashtags.",
+  "repository": {
+    "url": "https://github.com/saeedmsdi-ugchooks/mcp-server",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "ugchooks-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ugchooks.app/mcp"
+    }
+  ]
+}
